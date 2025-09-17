@@ -30,10 +30,10 @@ const Section3 = () => {
      {
        item.map( (item) => (
          <div className="flex flex-col mb-6 rounded-md shadow"> 
-         <img src={item.image} alt="" className="" />
+         <img src={item.image} alt="" className=" rounded-t-md" />
          <div className="p-6 space-x-3">
-         <h6 className="text-[#9698a6] text-sm">{item.author}</h6>
-         <h2 className=" text-lg leading-snug">{item.title}</h2>
+         <h6 className="text-[#9698a6] text-sm ">{item.author}</h6>
+         <h2 className="leading-snug text-lg">{item.title}</h2>
          <p className="text-[#9698a6] font-semibold">{item.text}</p>
          </div>
          </div>
