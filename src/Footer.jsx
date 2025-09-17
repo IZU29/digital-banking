@@ -3,7 +3,7 @@ import {FaFacebook , FaYoutube , FaTwitter , FaPinterest , FaInstagram} from 're
 
 const Footer = () => {
   return (
-    <div className='bg-[hsl(233,26%,24%)] border px-4 py-8'>
+    <div className='bg-[hsl(233,26%,24%)] px-4 py-8'>
       {/* Logo
         FaIcons 
         LIst 
