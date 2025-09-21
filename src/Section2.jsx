@@ -33,22 +33,24 @@ const [product , setProducts] = useState([
 
 //   
   return (
-    <div className='flex flex-col font-publicsans bg-[hsl(0,0%,98%)] px-4 py-8'>
+    <div className='flex flex-col font-publicsans bg-[hsl(0,0%,98%)] px-4 py-8  md:py-20 md:px-8 '>
       <div className="mb-6">
-      <h1 className="leading-tight text-4xl mb-4  text-center text-[#2d314d] ">Why choose Digitalbank?</h1>
-      <p className="text-base leading-relaxed mb-4 text-center text-[hsl(233,8%,62%)]">We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.</p>
+      <h1 className="leading-tight text-4xl mb-4  text-center md:text-left text-[#2d314d] ">Why choose Digitalbank?</h1>
+      <p className="text-base leading-relaxed mb-4 text-center md:w-1/2 md:text-left text-[hsl(233,8%,62%)]">We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.</p>
       </div>
-      
+      <div className="md:flex">
       {
         product.map(item => (
+          <div className="mb-6 mr-6">
           <div className="mb-6">
-          <img src={item.image} alt="" className="m-auto mb-6" />
-          <h1 className="leading-tight text-4xl mb-6  text-center text-[#2d314d] ">{item.title}</h1>
-          <p className="text-base leading-relaxed mb-6 text-center text-[hsl(233,8%,62%)]">{item.text}</p>
+          <img src={item.image} alt="" className="m-auto  md:m-0" />
+          </div>
+          <h1 className="leading-tight text-2xl mb-6  text-center text-[#2d314d] md:text-left">{item.title}</h1>
+          <p className="text-base leading-relaxed mb-6 text-center text-[hsl(233,8%,62%)] md:text-left">{item.text}</p>
           </div>
         ))
       }
-    
+    </div>
     </div>
   )
 }

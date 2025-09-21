@@ -8,7 +8,7 @@ export default function App() {
 
 
   return (
-    <div className="font-publicsans">
+    <div className="font-publicsans overflow-hidden">
       <NavBar />
       <Section1 />
       <Section2 />

@@ -25,12 +25,15 @@ const Section3 = () => {
       text: 'After a lot of hard work by the whole team, we’re excited to launch our closed beta.It’s easy to request an invite through the site ...'
     }])
   return (
-    <div className='px-4 py-8'>
-      <h1 className="leading-tight text-4xl mb-4  text-center text-[#2d314d] ">Latest Articles</h1>
+    <div className='px-4 py-8 md:py-20 md:px-8 mb-12'>
+      <h1 className="leading-tight text-4xl   text-center text-[#2d314d] mb-8">Latest Articles</h1>
+      <div className="md:flex">
      {
        item.map( (item) => (
-         <div className="flex flex-col mb-6 rounded-md shadow"> 
-         <img src={item.image} alt="" className=" rounded-t-md" />
+         <div className="flex flex-col mb-8 rounded-md shadow md:mr-6"> 
+         <div className="h-48">
+         <img src={item.image} alt="" className=" rounded-t-md w-full h-full" />
+         </div>
          <div className="p-6 space-x-3">
          <h6 className="text-[#9698a6] text-sm ">{item.author}</h6>
          <h2 className="leading-snug text-lg">{item.title}</h2>
@@ -39,6 +42,7 @@ const Section3 = () => {
          </div>
        ))
      }
+     </div>
     </div>
   )
 }
